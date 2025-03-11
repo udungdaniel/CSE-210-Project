@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-                Journal journal = new Journal();
+        Journal journal = new Journal();
         bool running = true;
 
         while (running)
@@ -16,8 +16,8 @@ class Program
             Console.WriteLine("------------");
             Console.WriteLine("1. Write a new entry");
             Console.WriteLine("2. Display journal");
-            Console.WriteLine("3. Save journal to file");
-            Console.WriteLine("4. Load journal from file");
+            Console.WriteLine("3. Save journal to CSV");
+            Console.WriteLine("4. Load journal from CSV");
             Console.WriteLine("5. Exit");
             Console.Write("Choose an option: ");
 
@@ -34,12 +34,12 @@ class Program
                 case "3":
                     Console.Write("Enter filename to save the data: ");
                     string saveFilename = Console.ReadLine();
-                    journal.SaveJournalToFile(saveFilename);
+                    journal.SaveJournalToCsv(saveFilename);
                     break;
                 case "4":
                     Console.Write("Enter filename to load from: ");
                     string loadFilename = Console.ReadLine();
-                    journal.LoadJournalFromFile(loadFilename);
+                    journal.LoadJournalFromCsv(loadFilename);
                     break;
                 case "5":
                     running = false;
