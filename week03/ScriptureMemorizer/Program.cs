@@ -12,8 +12,8 @@ class Program
         while (!scripture.IsCompletelyHidden())
         {
             Console.Clear();
-            Console.WriteLine("Hello World! This is the ScriptureMemorizer Project.\n");
-            Console.WriteLine("---------------------------------------------------");
+            Console.WriteLine("Hello World! This is the ScriptureMemorizer Project.");
+            Console.WriteLine("---------------------------------------------------\n");
             Console.WriteLine(scripture.GetDisplayText());
             Console.WriteLine("\nPress Enter to hide words or type 'exit' to close the program.");
 
