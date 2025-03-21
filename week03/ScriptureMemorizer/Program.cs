@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using ScriptureMemorizer; 
 
-class Program
+class Program //I added creativity by adding random scripture selection from a list to present to the user.
 {
     static void Main()
     {
